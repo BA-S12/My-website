@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Send email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('k_GVujqSnh4LV7-ur');
+        })();
+    </script>
+    <!-- Send email -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css//all.css">
+
+    <link rel="stylesheet" href="/css/social.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <!-- CSS -->
+    <link rel="icon " type="png"
+    href="/img/logo.png">
+    <title>Social</title>
+</head>
+<body class="dark-theme">
+<!-- navbar -->
+        <nav>
+
+            <div class="logo"  >
+                <img src="/img//logo.png" alt="Logo" >
+            </div>
+
+            <div class="link">
+                <a href="/html/home.html">
+
+                    <img src="/img/home.png" alt="Home">
+                    <span>Home</span>
+
+                </a>
+
+                <a href="/html/skills.html">
+
+                    <img src="/img/skills.png" alt="Skills">
+                    <span>Skills  </span>
+
+                </a>
+
+                <a href="/html/project.html" >
+
+                    <img src="/img/project.png" alt="Projects">
+                    <span>Projects</span>
+
+                </a>
+
+                <a href="Journey">
+
+                    <img src="/img/journey.png" alt="Journey">
+                    <span>Journey</span>
+
+                </a>
+
+                <a href="Social" class="active">
+    
+                    <img src="/img/social-media (1).png" alt="Social">
+                    <span>Social</span>
+    
+                </a>
+
+            </div>
+
+            <div class="My-img">
+                <img src="/img/3800_4_07.jpg" alt="My Image">
+            </div>
+
+        </nav>
+<!-- navbar -->
+    <main>
+        <header>
+            <h1>Content My</h1>
+            <label class="switch" id="toLightMood">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                <input type="checkbox" class="input" placeholder=".">
+                <span class="slider"></span>
+            </label>
+        </header>
+        <div class="social-container">
+            <div class="right-side">
+                <div class="s">
+                    <a href="https://twitter.com/IBA_S12" target="_blank">
+                        <i class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+                    </a>
+                </div>
+                <div class="s">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+                    </a>
+                </div>
+                <div class="s">
+                    <a href="https://github.com/BA-S12" target="_blank">
+                        <i class="fa-brands fa-github" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="card">
+                    <form class="form" onsubmit="SendMail(); reset(); return false;">
+                        <p class="title">content my </p>
+                        <p class="message">FEEL FREE TO ASK ME! </p>
+                            <div class="flex">
+                            <label>
+                                <input class="input" type="text" placeholder="" required="" id="nameInput">
+                                <span>Name</span>
+                            </label>
+                    
+                        </div>  
+                                
+                        <label>
+                            <input class="input" type="email" placeholder="" required="" id="emailInput">
+                            <span>Email</span>
+                        </label> 
+                            
+                        <label>
+                            <input class="input" type="text" placeholder="" required="" id="subjectInput">
+                            <span>Subject</span>
+                        </label>
+                        <label>
+                        
+                            <textarea class="input" cols="30" rows="10" placeholder="" required="" id="messageInput"></textarea>
+                            <span>Message</span>
+                        </label>
+                        <button class="submit" onclick="customAlert.alert('The Email send Successfully.','Success')">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/social.js"></script>
+
+
+</html>
