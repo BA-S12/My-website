@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 
@@ -9,6 +10,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,7 +26,7 @@
     --bg-100:#222831;
     --bg-200:#393E46;
     --bg-300:#454e59;
-    --transition: 0.3s ;
+    --transition: 0.4s ;
     --margin-left:40px;
     --addtion:#330F53;
     --addtion1:rgba(69, 78, 89, 0.00);
@@ -32,15 +35,15 @@
 
 
 .light-theme {
-    --primary-100:#8A6BFF;
-    --primary-200:#c09aff;
-    --primary-300:#ffffff;
-    --accent-100:#FFC107;
-    --accent-200:#916400;
-    --text-100:#333333;
-    --text-200:#5c5c5c;
+    --primary-100:#892CDC;
+    --primary-200:#be60ff;
+    --primary-300:#ffc5ff;
+    --accent-100:#FFFFFF;
+    --accent-200:#9b9b9b;
+    --text-100:#000000;
+    --text-200:#2c2c2c;
     --bg-100:#ffffff;
-    --bg-200:#eeeaea;
+    --bg-200:#f5f5f5;
     --bg-300:#cccccc;
     --transition: 0.2s ;
     --margin-left: 40px;
@@ -56,7 +59,7 @@ a{
 }
 
 nav{
-    width: 140px;
+    width: 160px;
     background-color: var(--bg-200);
     display: flex;
     flex-direction: column;
@@ -64,6 +67,7 @@ nav{
     gap:90px;
     border-radius: 0 10px 10px 0;    
     box-shadow: 3px 1px 20px 0px var(--shadow);
+
 }
 .logo img{
     width: 84px;
@@ -72,7 +76,6 @@ nav{
 .link{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
 }
 .link a{
@@ -81,6 +84,8 @@ nav{
     justify-self: center;
     margin-left: 10px;
     padding: 3px 6px;
+    position: relative;
+    transition: var(--transition);
 }
 .link img{
     width: 30px;
@@ -91,13 +96,7 @@ nav{
     color: var(--text-200);
     font-weight: 600;
 }
-.link a:nth-child(1),
-.link a:nth-child(2),
-.link a:nth-child(3),
-.link a:nth-child(5)
-{
-    width: 100px;
-}
+
 .My-img img{
     width: 30px;
     height: 30px;
@@ -108,6 +107,21 @@ nav{
     border-radius: 10px;
     box-shadow: 7px 3px 19px 4px var(--shadow);
 }
+
+.link a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 39px;
+    height: 2px;
+    width: 0px;
+    background-color: var(--text-100);
+    transition: var(--transition);
+}
+.link a:hover::after{
+    width: 100%;
+}
+
 /* Navbar */
 
 .switch {
@@ -223,8 +237,8 @@ body{
     display: flex;
 }
 main{
-    margin: 15px 0 0 50px;
-    width: 83%;
+    margin: 15px 20px 20px 50px;
+    width: 100%;
 }
 main header{
     display: flex;
@@ -235,23 +249,18 @@ main header h1{
     color: var(--text-200);
 }
 
-@media(max-width:820px){
-    nav{
-        height: 200vh;
-    }
-}
+
+/*  */
 
 @media(max-width:450px){
-    nav{
-        height: 235vh;
+    .link{
+        align-items: center;
     }
     .link span{
         display: none;
-    }
-    .link a:nth-child(1), .link a:nth-child(2), .link a:nth-child(3), .link a:nth-child(5) {
-        width: fit-content;
     }
     .link img{
         margin: 0;
     }
 }
+

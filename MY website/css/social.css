@@ -17,7 +17,7 @@
 }
 .social-container{
     display: flex;
-    margin-top: 60px; 
+    margin: 60px 20px; 
     justify-content: space-between;
 }
 .right-side {

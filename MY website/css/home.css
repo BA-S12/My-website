@@ -9,15 +9,15 @@
 
 :root{
     --primary-100:#892CDC;
-    --primary-200:#BC6FF1;
-    --primary-300:#fdf6fd;
-    --accent-100:#D9ACF5;
-    --accent-200:#fff4ff;
-    --text-100:#EEEEEE;
-    --text-200:#FDEBED;
+    --primary-200:#be60ff;
+    --primary-300:#ffc5ff;
+    --accent-100:#BC6FF1;
+    --accent-200:#570b8d;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
     --bg-100:#222831;
-    --bg-200:#393E46;
-    --bg-300:#454e59;
+    --bg-200:#313841;
+    --bg-300:#4a505a;
     --transition: 0.3s ;
     --margin-left:40px;
     --addtion:#330F53;
@@ -26,24 +26,7 @@
 }
 
 
-.light-theme {
-    --primary-100:#8A6BFF;
-    --primary-200:#c09aff;
-    --primary-300:#ffffff;
-    --accent-100:#FFC107;
-    --accent-200:#916400;
-    --text-100:#333333;
-    --text-200:#5c5c5c;
-    --bg-100:#ffffff;
-    --bg-200:#eeeaea;
-    --bg-300:#cccccc;
-    --transition: 0.2s ;
-    --margin-left: 40px;
-    --addition: #724B7D;
-    --addtion: #BC6FF1;
-    --addtion1: rgba(69, 78, 89, 0.2);
-    --shadow: #ddd;
-}
+
 
 
 
@@ -62,7 +45,7 @@ body{
 
 /* Main */
 main{
-    margin: 15px 0 0 50px;
+    margin: 15px 0 0px 50px;
 }
 main header{
     display: flex;
@@ -113,12 +96,19 @@ section .left-Side .r1 .my-data{
     color: var(--text-100);
     line-height: 26px;
 }
+section .left-Side .r1 .go-to-Project p {
+    font-size: 14px;
+}
+section .left-Side .r1 .go-to-Project i {
+    font-size: 28px;
+    margin: 20px 0;
+}
 section .left-Side .r1 .go-to-Project .text{
     color: var(--text-100);
 }
 section .left-Side .r1 .go-to-Project button{
     width: 107px;
-    height: 25px;
+    padding: 6px 0;
     border-radius: 10px;
     background: linear-gradient(180deg, var(--primary-100) 31.25%, rgba(188, 111, 241, 0.96) 100%);
     border: none;
@@ -162,6 +152,7 @@ section .left-Side .r2 .data .c1 {
 }
 section .left-Side .r2 .data .c2 .arrow{
     font-size: 25px;
+    color: var(--text-100);
 }
 section .left-Side .r2 .data::before{
     content: '';
@@ -190,14 +181,23 @@ section .left-Side .r3 .row1 .text{
     color: var(--text-100);
     line-height: 27px;
 }
+.r3 .r31 .text i {
+    margin-right: 5px;
+}
 section .left-Side .r3 .row1 button{
     width: 107px;
-    height: 25px;
+    padding: 6px 0;
     border-radius: 10px;
     background: linear-gradient(180deg, var(--primary-100) 31.25%, rgba(188, 111, 241, 0.96) 100%);
     border: none;
     cursor: pointer;
     text-align: center;
+}
+section button{
+    transition: var(--transition);
+}
+section button:hover{
+    transform: scale(1.05);
 }
 section .left-Side .r3 .row1 button a{
     color: var(--text-200);
@@ -264,8 +264,7 @@ section .right-Side .bottom button{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 107px;
-    height: 25px;
+    padding: 8px 7px;
     border-radius: 10px;
     background: linear-gradient(180deg, var(--primary-100) 31.25%, rgba(188, 111, 241, 0.96) 100%);
     border: none;

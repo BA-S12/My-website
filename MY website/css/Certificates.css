@@ -1,0 +1,30 @@
+:root{
+    --primary-100:#892CDC;
+    --primary-200:#BC6FF1;
+    --primary-300:#fdf6fd;
+    --accent-100:#D9ACF5;
+    --accent-200:#fff4ff;
+    --text-100:#EEEEEE;
+    --text-200:#FDEBED;
+    --bg-100:#222831;
+    --bg-200:#393E46;
+    --bg-300:#454e59;
+    --transition: 0.4s linear ;
+    --margin-left:40px;
+    --addtion:#330F53;
+    --addtion1:rgba(69, 78, 89, 0.00);
+    --shadow:#222;
+}
+.continer{
+    margin: 40px 0  ;
+}
+.continer .certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.continer .certificates img{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

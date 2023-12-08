@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const cardContainerId = card.closest('.backEnd-cards, .frontEnd-cards, .data-cards').id;
 
             if (filterId === 'all') {
-                card.style.display = 'block';
+                card.style.display = 'flex';
             } else {
-                card.style.display = cardContainerId === filterId ? 'block' : 'none';
+                card.style.display = cardContainerId === filterId ? 'flex' : 'none';
             }
         });
     }
