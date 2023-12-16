@@ -184,8 +184,19 @@
     font-size: 20px;
     font-weight: 900;
 }
+.cards .card .top a{
+    color: var(--addtion);
+    position: relative;
+    right: -39px;
+    top: 1px;
+    transition: var(--transition);
+}
+.cards .card .top a:hover{
+    color: var(--accent-200);
+}
 .cards .card .middle div img{
     width: 150px;
+    height: 150px;
     border-radius: 20px;
     transition: var(--transition);
 }
